@@ -7,10 +7,27 @@
   "version": "1.0.0",
   "author": "Illiab",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --windows --linux",
+    "release": "electron-builder --mac --windows --linux --publish always"
   },
-  "dependencies": {},
   "devDependencies": {
-    "electron": "13.1.7"
-  }
+    "electron": "13.1.7",
+    "electron-builder": "^22.14.5"
+  },
+  "build": {
+		"appId": "com.yourcompany.yourapp",
+		"productName": "Your App",
+		"mac": {
+			"category": "public.app-category.lifestyle"
+		},
+		"dmg": {
+			"icon": false
+		},
+		"linux": {
+			"target": ["AppImage"],
+			"category": "Office"
+		}
+	}
 }
