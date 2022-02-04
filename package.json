@@ -1,0 +1,16 @@
+{
+  "name": "pale-cent-stamp-da63p",
+  "productName": "pale-cent-stamp-da63p",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Illiab",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "13.1.7"
+  }
+}
